@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+       <input type="password" id="password">  
+       <input type="checkbox" id="check"> Показать пароль
+
+
+
+
+
+
+
+<script>
+
+     const passwordInput = document.getElementById("password");
+     const toggleButton = document.getElementById('check');
+
+toggleButton.addEventListener('click', function(){
+
+
+if (passwordInput.type === 'password'){
+    passwordInput.type = 'text';
+    toggleButton.textContent = 'Скрыть'
+
+}else{
+passwordInput.type = 'password';
+
+toggleButton.textContent = 'Показать';
+}
+
+
+
+
+
+
+
+
+
+
+});
+</script>
+</body>
+</html>
+
